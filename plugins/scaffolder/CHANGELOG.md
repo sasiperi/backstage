@@ -1,5 +1,19 @@
 # @backstage/plugin-scaffolder
 
+## 1.3.0-next.2
+
+### Minor Changes
+
+- dc39366bdb: - Added a new page under `/create/tasks` to show tasks that have been run by the Scaffolder.
+  - Ability to filter these tasks by the signed in user, and all tasks.
+  - Added optional method to the `ScaffolderApi` interface called `listTasks` to get tasks with an required `filterByOwnership` parameter.
+
+### Patch Changes
+
+- ac0c7e45ee: Fixes review mask in `MultistepJsonForm` to work as documented. `show: true` no longer needed when mask is set.
+- Updated dependencies
+  - @backstage/integration@1.2.1-next.2
+
 ## 1.3.0-next.1
 
 ### Patch Changes
